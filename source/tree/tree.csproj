@@ -1,7 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>nnTree</PackageId>
+    <Authors>Marco A. Dorantes</Authors>
+    <Product>nTree</Product>
+    <Description>Very simple tree data structures on .NET Standard</Description>
+    <Copyright>Copyright © Marco A. Dorantes 2019.</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/MarcoDorantes/tree</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>
