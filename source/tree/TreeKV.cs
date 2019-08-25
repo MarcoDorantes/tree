@@ -14,6 +14,7 @@ namespace nutility
         public Tree(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
 
         public V Value { get; set; }
+        public Tree<K, V> Parent { get; set; }
 
         public override string ToString()
         {

@@ -205,5 +205,23 @@ namespace tree.spec
             //Assert
             Assert.IsTrue(result);
         }
+
+        [TestMethod]
+        public void parent()
+        {
+            //Arrange
+            var head = new nutility.Tree<int>();
+            head.Value = 1;
+            head.Parent = null;
+            head.Add(new nutility.Tree<int> { Value = 2, Parent = head });
+            var child2 = new nutility.Tree<int> { Value = 3, Parent = head };
+            head.Add(child2);
+
+            //Act
+            var parent = child2.Parent;
+
+            //Assert
+            Assert.AreSame(head, parent);
+        }
     }
 }
